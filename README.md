@@ -2,6 +2,17 @@
 AWS ALB ingress controller  with EKS cluster
 ![image](https://github.com/user-attachments/assets/47034a3d-1483-4dec-9e49-87baf9e42102)
 
+
+
+Tag your vpc public subnet.
+            
+            Key                    | value
+            kubernetes.io/role/elb | 1
+            
+![image](https://github.com/user-attachments/assets/36c2ad0d-376f-4309-b417-455bae82211a)
+
+
+
 Step 1: Create IAM Role using eksctl
 
 1.1 Create IAM Policy using the iam_policy.json
