@@ -18,6 +18,10 @@ Step 1: Create IAM Role using eksctl
 
 1.1 Create IAM Policy using the iam_policy.json
 
+
+    curl -O https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/v2.11.0/docs/install/iam_policy.json
+<br>
+
     aws iam create-policy \
     --policy-name AWSLoadBalancerControllerIAMPolicy \
     --policy-document file://iam_policy.json
